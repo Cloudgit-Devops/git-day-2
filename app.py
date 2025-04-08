@@ -8,8 +8,8 @@ ec2 = boto3.client('ec2')
 response = ec2.run_instances(
     ImageId='ami-0c55b159cbfafe1f0',  # Example Amazon Linux AMI ID, replace with your own
     InstanceType='t2.micro',           # Instance type (t2.micro is eligible for free tier)
-    MinCount=1,                        # Minimum number of instances to launch
-    MaxCount=2,                        # Maximum number of instances to launch
+    MinCount=2,                        # Minimum number of instances to launch
+    MaxCount=4,                        # Maximum number of instances to launch
     KeyName='aws devops',           # Replace with your EC2 key pair name
 )
 
