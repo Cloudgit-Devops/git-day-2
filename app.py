@@ -10,7 +10,7 @@ response = ec2.run_instances(
     InstanceType='t2.micro',           # Instance type (t2.micro is eligible for free tier)
     MinCount=1,                        # Minimum number of instances to launch
     MaxCount=2,                        # Maximum number of instances to launch
-    KeyName='your-key-name',           # Replace with your EC2 key pair name
+    KeyName='aws devops',           # Replace with your EC2 key pair name
 )
 
 # Print the instance ID of the newly launched EC2 instance
